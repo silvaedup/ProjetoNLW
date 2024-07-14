@@ -45,3 +45,4 @@ const section = document.querySelector("section");
 for (let atividade of atividades) {
   section.innerHTML += criaritemdeatividade(atividade);
 }
+// testando git
