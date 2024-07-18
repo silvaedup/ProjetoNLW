@@ -173,3 +173,5 @@ const concluirAtividade = (event) => {
 
   atividade.finalizada = !atividade.finalizada;
 };
+
+//finalizado//
