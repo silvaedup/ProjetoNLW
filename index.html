@@ -1,30 +1,45 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
 <script>dayjs.locale('pt-br')</script>
 
 <link rel="stylesheet" href="style.css">
 
-<form onsubmit="salvarAtividade(event)">
-  <div>
-    <input type="text" placeholder="Qual a atividade?" name="atividade" required>
-  </div>
+<div id="app">
+  <form onsubmit="salvarAtividade(event)">
 
-  <div>
-    <select name="dia">
-      <option value="2024-03-01">01 de fevereiro</option>
-    </select>
-  </div>
+    <div class="fields">
+      <div class="field-wrapper">
 
-  <div>
-    <select name="hora">
-      <option value="10:30">10:30</option>
-    </select>
-  </div>
-  <button>Salvar atividade</button>
-</form>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.48835 1.15499C9.17587 0.842408 8.75201 0.666751 8.31002 0.666656H2.33335C1.89133 0.666656 1.4674 0.842251 1.15484 1.15481C0.842282 1.46737 0.666687 1.8913 0.666687 2.33332V8.30999C0.666781 8.75198 0.842438 9.17584 1.15502 9.48832L8.40835 16.7417C8.78712 17.118 9.29939 17.3293 9.83335 17.3293C10.3673 17.3293 10.8796 17.118 11.2584 16.7417L16.7417 11.2583C17.1181 10.8796 17.3293 10.3673 17.3293 9.83332C17.3293 9.29936 17.1181 8.78708 16.7417 8.40832L9.48835 1.15499Z" stroke="#A1A1AA" style="stroke:#A1A1AA;stroke:color(display-p3 0.6314 0.6314 0.6667);stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M5.25002 5.66666C5.48014 5.66666 5.66669 5.48011 5.66669 5.24999C5.66669 5.01987 5.48014 4.83332 5.25002 4.83332C5.0199 4.83332 4.83335 5.01987 4.83335 5.24999C4.83335 5.48011 5.0199 5.66666 5.25002 5.66666Z" stroke="#A1A1AA" style="stroke:#A1A1AA;stroke:color(display-p3 0.6314 0.6314 0.6667);stroke-opacity:1;" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
 
-<main>
-  <h1>Atividades</h1>
-  <section></section>
-</main>
-<script src="main.js"></script>
+        <input type="text" placeholder="Qual a atividade?" name="atividade" required>
+      </div>
+
+      <div class="field-wrapper">
+        <select name="dia">
+          <option value="2024-03-01">01 de fevereiro</option>
+        </select>
+      </div>
+
+      <div class="field-wrapper">
+        <select name="hora">
+          <option value="10:30">10:30</option>
+        </select>
+      </div>
+    </div>
+    <button>Salvar atividade</button>
+  </form>
+
+  <main>
+    <h1>Atividades</h1>
+    <section></section>
+  </main>
+  <script src="main.js"></script>
+</div>
